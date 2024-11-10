@@ -9,13 +9,17 @@
 body {
   min-height: 100vh;
   font-family: Cascadia Code;
-  background-color: aquamarine;
+  background-color: aliceblue;
 }
 
 .container {
   display: grid;
   place-items: center;
   row-gap: 60px;
+}
+
+h1 {
+  margin-top: 50px;
 }
 
 .search-box {
@@ -26,8 +30,12 @@ body {
   width: 400px;
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid black;
+  border: none;
   font-size: 18px;
+}
+
+.search-box .search-bar:focus {
+  outline: none;
 }
 
 .search-box .search-bar::placeholder {
@@ -35,14 +43,14 @@ body {
 }
 
 .location-weather-box {
-  height: 450px;
-  width: 450px;
-  border-radius: 8px;
+  height: 500px;
+  width: 650px;
   padding: 18px;
-  background-color: rgb(175, 209, 230);
-  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #171b1ce9;
   font-size: 22px;
   position: relative;
+  color: #979999;
 }
 
 .location-weather-box div {
@@ -56,7 +64,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 50px;
+  margin-top: 100px;
   width: 250px;
-  aspect-ratio: 1/1;
+  display: none;
 }
